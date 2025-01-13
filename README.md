@@ -46,23 +46,11 @@ brew install python
 1. Téléchargez et installez Python depuis [python.org](https://www.python.org/downloads/).
 2. Assurez-vous de cocher la case "Add Python to PATH" lors de l'installation.
 
-### Installation des dépendances
-
-Le script utilise la bibliothèque **requests**. Pour installer cette dépendance, vous pouvez utiliser **pip**, le gestionnaire de paquets Python.
-
-Dans votre terminal, à partir du répertoire de votre projet, exécutez la commande suivante pour installer les dépendances requises :
-
-```bash
-pip install -r requirements.txt
-```
-
-Cela installera toutes les dépendances nécessaires, y compris **requests**.
-
 ---
 
 ## Utilisation
 
-### Cloner le dépôt
+### Cloner le dépôt (Linux)
 
 Si vous n'avez pas encore cloné le dépôt, vous pouvez le faire avec cette commande :
 
@@ -75,7 +63,47 @@ pip install -r requirements.txt
 ### Exécuter le script
 
 1. Assurez-vous d'être dans le répertoire du projet où se trouve le fichier `sql_injection_tester.py`.
-2. Exécutez le script Python avec la commande suivante :
+2. Utiliser un environnement virtuel (recommandé)
+Pour éviter d'installer des paquets globalement et garder vos dépendances isolées, il est recommandé de créer un environnement virtuel.
+
+Créer un environnement virtuel :
+Dans l'invite de commandes, à partir du répertoire de votre projet, exécutez cette commande :
+
+```bash
+python -m venv venv
+```
+
+Activer l'environnement virtuel :
+Pour activer l'environnement virtuel, exécutez cette commande dans l'invite de commandes :
+```bash
+.\venv\Scripts\activate
+```
+
+Vous verrez alors (venv) apparaître dans votre invite de commandes, ce qui signifie que l'environnement virtuel est activé.
+
+Installer les dépendances :
+Avec l'environnement virtuel activé, installez les dépendances nécessaires via le fichier requirements.txt:
+```bash
+pip install -r requirements.txt
+```
+Si vous ne souhaitez pas utiliser un environnement virtuel, vous pouvez simplement installer les dépendances globalement en exécutant:
+
+```bash
+pip install requests
+```
+### Exécuter le script
+Pour exécuter le script, tapez simplement la commande suivante dans l'invite de commandes :
+
+```bash
+python sql_injection_tester.py
+```
+Le script vous demandera ensuite d'entrer l'URL de la cible que vous souhaitez tester. Par exemple :
+
+```bash
+Enter the target URL: http://example.com/page?id=1
+```
+Le script tentera alors de tester cette URL pour détecter des vulnérabilités d'injection SQL.
+4. Exécutez le script Python avec la commande suivante :
 
 ```bash
 python3 sql_injection_tester.py
@@ -86,8 +114,44 @@ python3 sql_injection_tester.py
 ```bash
 Enter the target URL: http://example.com/page?id=1
 ```
-
 Le script testera l'URL pour détecter des vulnérabilités d'injection SQL et affichera les résultats dans la console.
+
+---
+Pour Windows 11/10
+---
+### Étape 1 : Télécharger le fichier ZIP
+Comme nous allons éviter l'utilisation de Git, voici comment obtenir le dépôt :
+
+1.Allez sur la page du projet sur GitHub : https://github.com/fzazdbl/SQL-injection-tester.
+2.Cliquez sur le bouton "Code" et sélectionnez "Download ZIP".
+3.Une fois le fichier ZIP téléchargé, extrayez-le dans un dossier de votre choix.
+### Étape 2 : Installer les dépendances
+Ouvrez une fenêtre d'invite de commandes (CMD) et accédez au dossier où vous avez extrait les fichiers.
+
+Exemple :
+
+```bash
+cd C:\chemin\vers\SQL-injection-tester
+```
+Ensuite, installez les dépendances requises à l'aide de pip :
+
+```bash
+pip install -r requirements.txt
+```
+Cela installera les bibliothèques nécessaires, y compris requests.
+
+### Étape 3 : Exécuter le script
+Une fois les dépendances installées, vous pouvez exécuter le script Python en utilisant la commande suivante :
+
+```bash
+python sql_injection_tester.py
+```
+
+Le script vous demandera d'entrer l'URL de la cible que vous souhaitez tester. Par exemple :
+```bash
+Enter the target URL: http://example.com/page?id=1
+```
+Le script tentera alors de tester cette URL pour détecter des vulnérabilités d'injection SQL.
 
 ---
 
