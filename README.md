@@ -67,8 +67,8 @@ Cela installera toutes les dépendances nécessaires, y compris **requests**.
 Si vous n'avez pas encore cloné le dépôt, vous pouvez le faire avec cette commande :
 
 ```bash
-git clone https://github.com/fzazdbl/fzazking
-cd fzazking
+git clone https://github.com/fzazdbl/SQL-injection-tester
+cd SQL-injection-tester
 pip install -r requirements.txt
 ```
 
