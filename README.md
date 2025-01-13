@@ -16,8 +16,8 @@ Ce script Python est conçu pour détecter les vulnérabilités d'injection SQL 
 Clonez le repository et installez les dépendances requises :
 
 ```bash
-git clone https://github.com/fzazking/sql_injection_tester.py
-cd SQL-Injection-Tester
+git clone https://github.com/fzazdbl/fzazking.git
+cd sql_injection_tester.py
 pip install -r requirements.txt
 ```
 Lancez le script en fournissant l'URL cible à tester :
