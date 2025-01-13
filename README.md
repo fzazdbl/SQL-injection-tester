@@ -19,3 +19,10 @@ Clonez le repository et installez les dépendances requises :
 git clone https://github.com/ton_nom_utilisateur/SQL-Injection-Tester.git
 cd SQL-Injection-Tester
 pip install -r requirements.txt
+```
+Lancez le script en fournissant l'URL cible à tester :
+```bash
+python sql_injection_tester.py
+```
+Entrez l'URL cible lorsque vous y êtes invité.
+
