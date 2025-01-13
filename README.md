@@ -26,3 +26,9 @@ python sql_injection_tester.py
 ```
 Entrez l'URL cible lorsque vous y êtes invité.
 
+----------------------------------------------
+
+## Contribuer
+
+Les contributions sont les bienvenues ! Forkez ce repository, créez une branche, effectuez vos modifications et soumettez une pull request.
+
