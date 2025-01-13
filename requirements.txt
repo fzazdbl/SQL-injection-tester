@@ -1,0 +1,12 @@
+# Bibliothèque pour envoyer des requêtes HTTP
+requests>=2.25.0
+
+# Si tu veux ajouter d'autres bibliothèques, comme par exemple pour l'analyse de la sortie ou la gestion de l'environnement :
+# beautifulsoup4>=4.9.0   # Pour analyser les pages HTML si besoin
+# lxml>=4.6.3             # Une autre bibliothèque pour analyser le HTML et XML (si utilisée)
+
+# Pour gérer l'environnement virtuel
+python-dotenv>=0.19.0      # Si tu veux gérer des variables d'environnement dans un fichier .env
+
+# Si tu utilises un framework comme Flask (optionnel)
+# Flask>=2.0.0
